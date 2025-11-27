@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yohanes Bramananda Watodey</title>
+    <!-- Favicon (Opsional) -->
+    <link rel="icon" href="Asset Image/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts (Poppins, Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <!-- PENTING: TAMBAHKAN INI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+
+    <!-- AOS Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header id="header">
+      <nav class="navbar">
+        <div class="container">
+          <a href="#profil" class="logo">YBW</a>
+          <ul class="nav-links">
+            <li><a href="#profil" data-tooltip="Tentang Saya">Profil</a></li>
+            <li>
+              <a href="#pendidikan" data-tooltip="Perjalanan Edukasi"
+                >Pendidikan</a
+              >
+            </li>
+            <li><a href="#skill" data-tooltip="Keahlian Saya">Skill</a></li>
+            <li>
+              <a href="#portfolio" data-tooltip="Karya-karya Saya">Portfolio</a>
+            </li>
+            <li><a href="#kontak" data-tooltip="Hubungi Saya">Kontak</a></li>
+          </ul>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="mobile-nav">
+        <ul class="mobile-nav-links">
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section / Profil Saya -->
+    <section id="profil" class="hero-section">
+      <div class="container">
+        <div class="profile-card" data-aos="fade-up">
+          <div class="profile-image-wrapper">
+            <img src="asset/profil2.JPG" class="profile-image" />
+          </div>
+          <div class="profile-content">
+            <h1>Halo! Saya Yohanes Bramananda Watodey.</h1>
+            <p>
+              Seorang pengembang web, pemusik, fotografer, dan kreator video.
+              Saya suka mempelajari hal-hal baru dan teknologi terkini. Mari
+              terhubung!
+            </p>
+            <a href="#kontak" class="btn-primary">Hubungi Saya</a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <a href="#pendidikan">
+          <span class="arrow-down"></span>
+          <p>Scroll Down</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Pendidikan Saya -->
+    <section id="pendidikan" class="education-section">
+      <div class="container">
+        <h2 data-aos="fade-down">Pendidikan Saya</h2>
+        <div class="timeline" data-aos="fade-up">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>SMP Kanisius Gayam Yogyakarta</h3>
+              <p class="period">2020 - 2023</p>
+              <p>Lulusan dengan fokus pada mata pelajaran Matematika.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>
+                SMK Negeri 2 Yogyakarta - Jurusan Sistem Informatika Jaringan
+                dan Aplikasi
+              </h3>
+              <p class="period">2023 - 2027</p>
+              <p>
+                Mempelajari dasar-dasar pemrograman Web, Jaringan Komputer,
+                Hardware dan juga Software Komputer
+              </p>
+            </div>
+          </div>
+          <!-- Tambahkan entri pendidikan lain jika ada -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill Saya -->
+    <section id="skill" class="skill-section">
+      <div class="container">
+        <h2 data-aos="fade-down">Keahlian Saya</h2>
+        <div class="skill-grid">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-icon">
+              <img src="asset/web_dev_icon.svg" alt="Web Development" />
+            </div>
+            <!-- Ganti dengan ikon SVG jika ada -->
+            <h3>Website Development</h3>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 90%" data-progress="90">
+                <span>90%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-icon">
+              <img src="asset/hardware_icon.svg" alt="Hardware Installation" />
+            </div>
+            <h3>Hardware Installation</h3>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 75%" data-progress="75">
+                <span>75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-icon">
+              <img src="asset/software_icon.svg" alt="Software" />
+            </div>
+            <h3>Software</h3>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 85%" data-progress="85">
+                <span>85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-icon">
+              <img src="asset/music_icon.svg" alt="Music" />
+            </div>
+            <h3>Music</h3>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 70%" data-progress="70">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="skill-icon">
+              <img
+                src="asset/photography_icon.svg"
+                alt="Photography & Videography"
+              />
+            </div>
+            <h3>Photography & Videography</h3>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 80%" data-progress="80">
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="600">
+            <div class="skill-icon">
+              <img src="asset/iot_icon.svg" alt="IoT & Jaringan" />
+            </div>
+            <h3>IoT & Jaringan</h3>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 78%" data-progress="78">
+                <span>78%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Saya -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <h2 data-aos="fade-down" data-aos-delay="300">Portfolio Saya</h2>
+        <div class="portfolio-categories" data-aos="fade-up">
+          <button class="category-btn active" data-category="all">All</button>
+          <button class="category-btn" data-category="iot">IoT</button>
+          <button class="category-btn" data-category="web">Web</button>
+          <button class="category-btn" data-category="photography">
+            Photography
+          </button>
+        </div>
+        <div class="portfolio-grid">
+          <!-- IoT Projects -->
+          <div
+            class="portfolio-item"
+            data-category="iot"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img src="asset/project 4.jpeg" alt="Proyek IoT 1" />
+            <div class="overlay">
+              <h3>SKCIoT "SMART KITCHEN IoT"</h3>
+              <p>
+                Smart Kitchen IoT, is an IoT-based device that works with the
+                Blynk application, this tool can detect gas, temperature, and
+                humidity, this tool is made with the aim of preventing fires.
+              </p>
+              <a href="#" class="view-project-btn"></a>
+            </div>
+          </div>
+          <!-- Web Projects -->
+          <div
+            class="portfolio-item"
+            data-category="web"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img src="asset/ss web.jpg" alt="Proyek Web 1" />
+            <div class="overlay">
+              <h3>Web Portfolio</h3>
+              <p>Website Portfolio pertama saya</p>
+              <a href="https://bramananda.my.id" class="view-project-btn"></a>
+            </div>
+          </div>
+          <!-- Photography Projects (Contoh Grid) -->
+          <div
+            class="portfolio-item"
+            data-category="photography"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <img src="asset/pic10.JPG" alt="Foto Sore" />
+            <div class="overlay">
+              <h3>Landscape Photography</h3>
+              <p>Foto pemandangan alam.</p>
+              <a href="#" class="view-project-btn"></a>
+            </div>
+          </div>
+          <div
+            class="portfolio-item"
+            data-category="photography"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <img src="asset/pic6.jpg" alt="Foto Urban" />
+            <div class="overlay">
+              <h3>World Photography</h3>
+              <p>Jepretan Alam Kecil.</p>
+              <a href="#" class="view-project-btn"></a>
+            </div>
+          </div>
+          <!-- Foto hanya muncul di tab Photography -->
+<div
+  class="portfolio-item"
+  data-category="photography"
+  data-hide-on-all="true"
+  data-aos="zoom-in"
+  data-aos-delay="500"
+>
+  <img src="asset/pic12.jpg" alt="Sunset Beach" />
+  <div class="overlay">
+    <h3>Sunset Beach</h3>
+    <p>Keindahan pantai saat matahari terbenam.</p>
+    <a href="#" class="view-project-btn"></a>
+  </div>
+</div>
+
+<div
+  class="portfolio-item"
+  data-category="photography"
+  data-hide-on-all="true"
+  data-aos="zoom-in"
+  data-aos-delay="500"
+>
+  <img src="asset/pic13.jpg" alt="Sunset Beach" />
+  <div class="overlay">
+    <h3>Sunset Beach</h3>
+    <p>Keindahan pantai saat matahari terbenam.</p>
+    <a href="#" class="view-project-btn"></a>
+  </div>
+</div>
+
+<div
+  class="portfolio-item"
+  data-category="photography"
+  data-hide-on-all="true"
+  data-aos="zoom-in"
+  data-aos-delay="500"
+>
+  <img src="asset/pic1.jpg" alt="Sunset Beach" />
+  <div class="overlay">
+    <h3>Sunset Beach</h3>
+    <p>Keindahan pantai saat matahari terbenam.</p>
+    <a href="#" class="view-project-btn"></a>
+  </div>
+</div>
+
+<div
+  class="portfolio-item"
+  data-category="photography"
+  data-hide-on-all="true"
+  data-aos="zoom-in"
+  data-aos-delay="500"
+>
+  <img src="asset/pic2.jpg" alt="Sunset Beach" />
+  <div class="overlay">
+    <h3>Sunset Beach</h3>
+    <p>Keindahan pantai saat matahari terbenam.</p>
+    <a href="#" class="view-project-btn"></a>
+  </div>
+</div>
+
+<div
+  class="portfolio-item"
+  data-category="photography"
+  data-hide-on-all="true"
+  data-aos="zoom-in"
+  data-aos-delay="500"
+>
+  <img src="asset/pic3.jpg" alt="Sunset Beach" />
+  <div class="overlay">
+    <h3>Sunset Beach</h3>
+    <p>Keindahan pantai saat matahari terbenam.</p>
+    <a href="#" class="view-project-btn"></a>
+  </div>
+</div>
+
+<div
+  class="portfolio-item"
+  data-category="photography"
+  data-hide-on-all="true"
+  data-aos="zoom-in"
+  data-aos-delay="500"
+>
+  <img src="asset/pic4.jpg" alt="Sunset Beach" />
+  <div class="overlay">
+    <h3>Sunset Beach</h3>
+    <p>Keindahan pantai saat matahari terbenam.</p>
+    <a href="#" class="view-project-btn"></a>
+  </div>
+</div>
+
+<div
+  class="portfolio-item"
+  data-category="photography"
+  data-hide-on-all="true"
+  data-aos="zoom-in"
+  data-aos-delay="500"
+>
+  <img src="asset/pic5.jpg" alt="Sunset Beach" />
+  <div class="overlay">
+    <h3>Sunset Beach</h3>
+    <p>Keindahan pantai saat matahari terbenam.</p>
+    <a href="#" class="view-project-btn"></a>
+  </div>
+</div>
+
+<div
+  class="portfolio-item"
+  data-category="photography"
+  data-hide-on-all="true"
+  data-aos="zoom-in"
+  data-aos-delay="500"
+>
+  <img src="asset/pic7.jpg" alt="Sunset Beach" />
+  <div class="overlay">
+    <h3>Sunset Beach</h3>
+    <p>Keindahan pantai saat matahari terbenam.</p>
+    <a href="#" class="view-project-btn"></a>
+  </div>
+</div>
+
+<div
+  class="portfolio-item"
+  data-category="photography"
+  data-hide-on-all="true"
+  data-aos="zoom-in"
+  data-aos-delay="500"
+>
+  <img src="asset/pic8.jpg" alt="Sunset Beach" />
+  <div class="overlay">
+    <h3>Sunset Beach</h3>
+    <p>Keindahan pantai saat matahari terbenam.</p>
+    <a href="#" class="view-project-btn"></a>
+  </div>
+</div>
+
+<div
+  class="portfolio-item"
+  data-category="photography"
+  data-hide-on-all="true"
+  data-aos="zoom-in"
+  data-aos-delay="500"
+>
+  <img src="asset/pic9.jpg" alt="Sunset Beach" />
+  <div class="overlay">
+    <h3>Sunset Beach</h3>
+    <p>Keindahan pantai saat matahari terbenam.</p>
+    <a href="#" class="view-project-btn"></a>
+  </div>
+</div>
+
+          <!-- Tambahkan lebih banyak item portfolio sesuai kebutuhan -->
+        </div>
+
+           <div class="slider-container" id="mobile-slider">
+      <!-- <button class="prev">&#10094;</button> -->
+      <div class="slider"></div>
+     <!-- <button class="next">&#10095;</button> -->
+    </div>
+    
+      </div>
+    </section>
+
+    <!-- Kontak Saya -->
+    <section id="kontak" class="contact-section">
+      <div class="container">
+        <h2 data-aos="fade-down">Kontak Saya</h2>
+        <div class="contact-icons" data-aos="fade-up">
+          <a
+            href="https://www.instagram.com/bram1_71/"
+            target="_blank"
+            class="contact-link instagram"
+          >
+            <img src="asset/ig.svg" alt="Instagram" />
+            <span>@bram1_71</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yohanes-bramananda-47446a338/"
+            target="_blank"
+            class="contact-link linkedin"
+          >
+            <img src="asset/ld.svg" alt="LinkedIn" />
+            <span>yohanes bramananda</span>
+          </a>
+          <a
+            href="https://linktr.ee/bramayohanes"
+            target="_blank"
+            class="contact-link linktree"
+          >
+            <img src="asset/linktree.png" alt="Linktree" />
+            <span>bramayo</span>
+          </a>
+          <a
+            href="https://wa.me/+6289522693311"
+            target="_blank"
+            class="contact-link whatsapp"
+          >
+            <img src="asset/wa.svg" alt="WhatsApp" />
+            <span>+62 895 2269 3311</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Yohanes Bramananda Watodey . All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
